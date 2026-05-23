@@ -1,18 +1,36 @@
-import MessageBox from "../../components/MessageBox/MessageBox";
-
-function Messages() {
+function ProfileManager() {
 
   return (
 
     <div>
 
-      <h1>Mensagens</h1>
+      <h1>Gerenciar Perfil</h1>
 
-      <MessageBox />
+      <form>
+
+        <input
+          type="text"
+          placeholder="Especialidade"
+        />
+
+        <input
+          type="text"
+          placeholder="Cidade"
+        />
+
+        <textarea
+          placeholder="Descrição profissional"
+        />
+
+        <button>
+          Salvar
+        </button>
+
+      </form>
 
     </div>
 
   );
 }
 
-export default Messages;
+export default ProfileManager;
